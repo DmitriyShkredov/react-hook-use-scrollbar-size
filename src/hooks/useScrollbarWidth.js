@@ -14,7 +14,7 @@ export const useScrollbarWidth = () => {
   wrapper.appendChild(inner);
 
   widthRef.current = wrapper.offsetWidth - inner.offsetWidth;
-  // document.body.removeChild(wrapper);
+  document.body.removeChild(wrapper);
 
   console.log("xx", widthRef.current);
 
